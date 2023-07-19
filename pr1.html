@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+    <h1 id="title" >dBCoder Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div class="container">
+    <form class="survey-form">
+        <label id="name-label">Name</label>
+        <br>
+        <input type="text" id="name" placeholder="Name" required>
+        <br>
+        <br>
+        <label id="email-label">Email</label>
+        <br>
+        <input type="email" id="email" placeholder="Email Id" required>
+        <br>
+        <br>
+        <label id="number-label">Number</label>
+        <br>
+        <input class="btn1" type="number" id="number" min="10" max="15" >
+        <br>
+        <br>
+        <legend>Which option best describes your current role?</legend>
+        <select id="dropdown" name="mostLike" class="form-control">
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Student</option>
+            <option value="projects">Full Time Job</option>
+            <option value="community">Full Time Learner</option>
+            <option value="openSource">Prefer not say</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+    
+            <legend>Would you recommend dBCoderCodeCamp to a friend?</legend>
+
+            <label><input id="definitely" type="radio" name="definitely-maybe-not-sure" value="definitely">Definitely</label>
+            <br>
+            <label><input id="maybe" type="radio" name="definitely-maybe-not-sure" value="maybe">May be</label>
+            <br>
+            <label><input id="not-sure" type="radio" name="definitely-maybe-not-sure" value="not-sure">Not sure</label>
+            <pre></pre>
+        
+            <legend>What is your favorite feature of dBCoderCodeCamp?</legend>
+
+            <input id="Front-endProjects" type="checkbox" name="personality" value="Front-endProjects"> <label for="loving">Front-end Projects</label>
+<br>
+            <input id="Back-endProjects" type="checkbox" name="personality" value="Back-endProjects"> <label for="Back-endProjects">Back-end Projects</label>
+<br>
+            <input id="DataVisualization" type="checkbox" name="personality" value="DataVisualization"> <label for="DataVisualization"> Data Visualization</label>
+<br>
+            <input id="Challenges" type="checkbox" name="personality" value="Challenges"> <label for="Challenges"> Challenges</label>
+<br>
+            <input id="OpenSourceCommunity" type="checkbox" name="personality" value="Open Source Community"> <label for="OpenSourceCommunity">Open Source Community</label>
+<br>
+            <input id="Gitterhelprooms" type="checkbox" name="personality" value="Gitterhelprooms"> <label for="Gitterhelprooms"> Gitter help rooms</label>
+<br>
+            <input id="Videos" type="checkbox" name="personality" value="Videos"> <label for="Videos"> Videos</label>
+<br>
+            <input id="city-Meetups" type="checkbox" name="personality" value="city-Meetups"> <label for="city-Meetups"> City Meetups</label>
+<br>
+            <input id="Wiki" type="checkbox" name="personality" value="Wiki"> <label for="Wiki"> Wiki</label>
+<br>
+            <input id="Forum" type="checkbox" name="personality" value="Forum"> <label for="Forum"> Forum</label>
+<br>
+            <input id="Additional Courses" type="checkbox" name="personality" value="Additional-Courses"> <label for="Additional-Courses"> Additional Courses</label>
+<br>
+<pre></pre>
+<label for="improve">Any comments or suggestions?</label>
+<br>
+            <textarea name="txt" id="txt" cols="60" rows="7" placeholder="Enter your comment here......"></textarea>
+            <br>
+            <br>
+            <button class="btn1" id="submit" value="submit">Submit</button>
+           
+        
+    </form>
+</div>
+</body>
+</html>
